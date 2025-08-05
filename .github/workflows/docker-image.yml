@@ -19,6 +19,12 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+          
+      - name: Confirm POM exists
+        run: |
+          echo "Current dir: $(pwd)"
+          ls -la
+          cat pom.xml
 
       - name: Build with Maven
         run: mvn clean package -DskipTests
