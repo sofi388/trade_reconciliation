@@ -1,0 +1,4 @@
+1. Set up MySQL server on the local machine (see YouTube)
+2. Log in in terminal: mysql -u root -p
+3. Copy text from initial.sql and paste it in the mysql terminal
+4. Check if tables exists: show tables;
