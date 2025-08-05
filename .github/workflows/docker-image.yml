@@ -28,6 +28,7 @@ jobs:
 
       - name: Build with Maven
         run: mvn clean package -DskipTests
+        working-directory: ./trade_reconciliation
 
       - name: Log in to Docker Hub using CLI
         run: docker login -u sofi388 -p ${{ secrets.DOCKER_HUB_TOKEN }}
